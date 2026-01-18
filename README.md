@@ -1,16 +1,54 @@
-# React + Vite
+Movie Dashboard - Optimized React Application
+A high-performance, responsive movie discovery dashboard built with ReactJS and the TMDb API. This project was developed as a final graduation milestone for the 6-week Junior ReactJS Developer Internship.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo
+<!-- Deployed on: [Vercel Link here] -->
 
-Currently, two official plugins are available:
+Local Site: http://localhost:5173/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Core Features
+Dynamic Movie Discovery: Real-time fetching of "Popular" and "Top Rated" categories.
 
-## React Compiler
+Intelligent Search: Instantly find movies using a optimized search bar.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Responsive Design: Fully mobile-first layout using Tailwind CSS.
 
-## Expanding the ESLint configuration
+Data-Driven UI: Custom hooks for efficient state and effect management.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ Performance & Optimization (Week 6)
+I focused heavily on modern web performance standards, achieving significant score improvements in Lighthouse:
+
+Code Splitting: Implemented React.lazy and Suspense to reduce initial load time.
+
+Resource Prioritization: Added preconnect hints for API origins to reduce handshake latency.
+
+Image Optimization: Used loading="lazy" and decoding="async" for all movie posters to improve LCP.
+
+SEO Excellence: Created a custom robots.txt to guide search engine crawlers.
+
+ Quality Assurance (Week 5)
+Reliability was verified through a comprehensive test suite using Jest and React Testing Library:
+
+Unit Tests: Verified rendering of MovieCard and SearchBar.
+
+Regression Testing: Ensured navigation between categories (Popular/Top Rated) remains stable after code refactors.
+
+ Tech Stack
+Frontend: ReactJS, Vite
+
+Styling: Tailwind CSS
+
+Icons: React Icons
+
+Testing: Jest, React Testing Library
+
+API: TMDb (The Movie Database)
+
+ Installation & Setup
+Clone the repository: git clone https://github.com/A-adilajaleel/Movie-Dashboard.git
+
+Install dependencies: npm install
+
+Start development server: npm run dev
+
+Run tests: npm test
