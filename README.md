@@ -1,5 +1,8 @@
 #  React Movie Discovery Dashboard
 
+**Live Demo:** https://movie-dashboard-gkfg.vercel.app/
+
+
 **Internship Project:** Yuva Intern (Junior ReactJS Developer)  
 **Technical Focus:** API Integration, Responsive Design, and Quality Assurance
 
