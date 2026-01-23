@@ -3,7 +3,7 @@ import { Toaster } from 'react-hot-toast'
 import useMovies from './hooks/useMovies'
 
 const Navbar = lazy(() => import('./components/Navbar'))
-const Footer = lazy(() => import('./components/footer'))
+const Footer = lazy(() => import('./components/Footer'))
 const SearchBar = lazy(() => import('./components/SearchBar'))
 const MovieCard = lazy(() => import('./components/MovieCard'))
 
