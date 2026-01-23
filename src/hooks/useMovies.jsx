@@ -6,7 +6,8 @@ const useMovies = (searchTerm, category = 'popular') => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_KEY = "f750957887b38340770f5e7093a23d6d"; 
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+
 
   useEffect(() => {
     const fetchMovies = async () => {

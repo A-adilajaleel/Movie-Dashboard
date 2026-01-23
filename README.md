@@ -1,54 +1,43 @@
-Movie Dashboard - Optimized React Application
-A high-performance, responsive movie discovery dashboard built with ReactJS and the TMDb API. This project was developed as a final graduation milestone for the 6-week Junior ReactJS Developer Internship.
+#  React Movie Discovery Dashboard
 
-Live Demo
-<!-- Deployed on: [Vercel Link here] -->
+**Internship Project:** Yuva Intern (Junior ReactJS Developer)  
+**Technical Focus:** API Integration, Responsive Design, and Quality Assurance
 
-Local Site: http://localhost:5173/
+A dedicated movie discovery engine designed to showcase efficient **Asynchronous Search** and **Category Filtering** using the TMDB API. This project emphasizes clean code architecture and a high-fidelity user interface built with **Tailwind CSS**.
 
-Core Features
-Dynamic Movie Discovery: Real-time fetching of "Popular" and "Top Rated" categories.
+---
 
-Intelligent Search: Instantly find movies using a optimized search bar.
+## UI & UX Architecture (Tailwind CSS)
 
-Responsive Design: Fully mobile-first layout using Tailwind CSS.
+* **Adaptive Grid Layout:** Engineered a responsive movie grid using Tailwind’s breakpoint system (`grid-cols-1` to `xl:grid-cols-5`), ensuring a seamless experience across mobile, tablet, and ultra-wide screens.
 
-Data-Driven UI: Custom hooks for efficient state and effect management.
+* **Loading Feedback:** Implemented high-performance visual cues for asynchronous operations using Tailwind's `animate-spin` utility, providing instant user feedback during data fetching.
+* **Interactive Design:** Utilized micro-interactions such as `hover:scale-105` and `transition-transform` to create a premium feel for movie cards without the overhead of custom CSS files.
 
- Performance & Optimization (Week 6)
-I focused heavily on modern web performance standards, achieving significant score improvements in Lighthouse:
+---
 
-Code Splitting: Implemented React.lazy and Suspense to reduce initial load time.
+##  Technical Highlights
 
-Resource Prioritization: Added preconnect hints for API origins to reduce handshake latency.
+* **Advanced Search Logic:** Engineered a real-time search interface that queries the TMDB database dynamically based on user input.
+* **Category Discovery:** Implemented instant toggling between "Popular" and "Top Rated" movie collections using optimized API endpoints.
+* **Custom Hook Architecture:** Developed the `useMovies` hook to isolate data fetching, loading states, and error management from the UI components.
 
-Image Optimization: Used loading="lazy" and decoding="async" for all movie posters to improve LCP.
+* **Automated Testing:** Included unit tests with **Jest** and **React Testing Library** to ensure search inputs and movie card rendering remain robust.
 
-SEO Excellence: Created a custom robots.txt to guide search engine crawlers.
+---
 
- Quality Assurance (Week 5)
-Reliability was verified through a comprehensive test suite using Jest and React Testing Library:
+## 🛠 Tech Stack
 
-Unit Tests: Verified rendering of MovieCard and SearchBar.
+| Layer | Technology | Usage |
+| :--- | :--- | :--- |
+| **Frontend** | React.js (Vite) | High-speed build and development |
+| **Styling** | Tailwind CSS | Mobile-first responsive UI |
+| **Testing** | Jest / RTL | Component and logic validation |
+| **API** | TMDB API | External data integration |
 
-Regression Testing: Ensured navigation between categories (Popular/Top Rated) remains stable after code refactors.
+## Local Development
 
- Tech Stack
-Frontend: ReactJS, Vite
-
-Styling: Tailwind CSS
-
-Icons: React Icons
-
-Testing: Jest, React Testing Library
-
-API: TMDb (The Movie Database)
-
- Installation & Setup
-Clone the repository: git clone https://github.com/A-adilajaleel/Movie-Dashboard.git
-
-Install dependencies: npm install
-
-Start development server: npm run dev
-
-Run tests: npm test
+1. **Clone:** `git clone https://github.com/A-adilajaleel/Movie-Dashboard`
+2. **Credentials:** Create a `.env` file and add `VITE_TMDB_API_KEY=your_key_here`.
+3. **Install:** `npm install`
+4. **Run:** `npm run dev`
